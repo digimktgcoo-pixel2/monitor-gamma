@@ -1,0 +1,12 @@
+# ads.txt
+# Required for ad network approval — Section 9.0
+# Replace placeholder lines below with your actual ad network entries
+# after approval.
+#
+# Format: <domain>, <publisher-id>, <account-type>, <cert-authority-id>
+#
+# Example Google AdSense entry (replace with your actual Publisher ID):
+# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+#
+# Leave this file in place even before approval.
+# Ad containers remain hidden in code until approval is granted.

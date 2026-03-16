@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="theme-color" content="#060a10"/>
+  <title>Methodology — NuclearThreatWatch.org</title>
+  <link rel="manifest" href="../manifest.json"/>
+  <link rel="stylesheet" href="../assets/css/style.css"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='none' stroke='%234ade80' stroke-width='8'/><circle cx='50' cy='50' r='10' fill='%234ade80'/></svg>"/>
+</head>
+<body>
+<nav id="topnav" role="navigation">
+  <a href="../index.html" class="logo-wrap">
+    <div class="logo-ring"></div>
+    <div><div class="logo-text">NUCLEAR<span>THREATWATCH</span></div><div class="logo-sub">Live Radiation Monitoring</div></div>
+  </a>
+  <div class="nav-links">
+    <a href="../index.html" class="nav-link">Live Map</a>
+    <a href="../resources.html" class="nav-link">Resources</a>
+    <a href="../check-your-area.html" class="nav-link">Check My Area</a>
+    <a href="../preparedness-gear.html" class="nav-link">Preparedness Gear</a>
+    <a href="../pages/about.html" class="nav-link">About</a>
+  </div>
+</nav>
+
+<!-- AD ZONE 1: 728x90 leaderboard above fold — activate after AdSense approval -->
+<div class="ad-zone ad-leaderboard" id="ad-top" style="display:none;">
+  <!-- PASTE ADSENSE 728x90 CODE HERE -->
+</div>
+<main class="content-page">
+  <h1>Methodology</h1>
+  <div class="page-sub">How we collect and display data</div>
+  <h2>Data Source</h2>
+<!-- AD ZONE 2: 336x280 rectangle mid-content — activate after AdSense approval -->
+<div class="ad-zone ad-rectangle" id="ad-mid" style="display:none;">
+  <!-- PASTE ADSENSE 336x280 CODE HERE -->
+</div>
+
+  <p>All readings come from the EPA RadNet Central Data Exchange (CDX) REST API. This provides near-real-time CSV data from EPA's 140+ fixed air monitoring stations across all 50 states.</p>
+
+  <h2>API Endpoint</h2>
+  <p>We query the following endpoint for each station:</p>
+  <div class="callout">
+    <code style="font-family:var(--font-data);font-size:12px;">
+    https://radnet.epa.gov/cdx-radnet-rest/api/rest/csv/{year}/fixed/{STATE}/{CITY}
+    </code>
+  </div>
+
+  <h2>Status Classification</h2>
+  <table>
+    <tr><th>Status</th><th>Threshold</th><th>Meaning</th></tr>
+    <tr><td style="color:var(--green)">NORMAL</td><td>&lt; 100 nSv/h</td><td>Within typical US background range</td></tr>
+    <tr><td style="color:var(--amber)">ELEVATED</td><td>100–149 nSv/h</td><td>Above average but within known variation</td></tr>
+    <tr><td style="color:var(--red)">ALERT</td><td>≥ 150 nSv/h</td><td>Significantly above normal — verify via EPA</td></tr>
+    <tr><td style="color:var(--muted)">NO DATA</td><td>—</td><td>Station offline or data unavailable</td></tr>
+  </table>
+  <div class="callout warn">These thresholds are for display purposes only. They are not official health guidance. Normal background radiation varies by location. See EPA and NRC for authoritative thresholds.</div>
+
+  <h2>Fallback Data</h2>
+  <p>When a live EPA fetch fails (network timeout, station offline, CORS restriction), the platform displays an estimated reading based on historical baseline values for that region. Estimated readings are clearly labeled.</p>
+
+  <h2>Refresh Rate</h2>
+  <p>The dashboard automatically refreshes data every 60 minutes. EPA typically updates station readings hourly.</p>
+
+  <h2>Units</h2>
+  <p><strong>nSv/h</strong> — nanosieverts per hour. The standard unit for ambient gamma radiation dose rate. Typical US background is 60–120 nSv/h depending on elevation and geology.</p>
+  <p><strong>CPM</strong> — counts per minute. Raw gamma particle detection count from the monitor sensor.</p>
+  </main>
+
+<!-- AD ZONE 3: 728x90 leaderboard footer — activate after AdSense approval -->
+<div class="ad-zone ad-leaderboard" id="ad-footer" style="display:none;">
+  <!-- PASTE ADSENSE 728x90 CODE HERE -->
+</div>
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="../index.html">Live Map</a>
+    <a href="../resources.html">Resources</a>
+    <a href="../check-your-area.html">Check My Area</a>
+    <a href="../preparedness-gear.html">Preparedness Gear</a>
+    <a href="../pages/about.html">About</a>
+    <a href="../pages/faq.html">FAQ</a>
+    <a href="../pages/contact.html">Contact</a>
+    <a href="../pages/privacy.html">Privacy</a>
+    <a href="../pages/terms.html">Terms</a>
+  </div>
+  <div class="footer-legal">
+    &copy; 2025 NuclearThreatWatch.org — Independent radiation monitoring using EPA RadNet data.<br>
+    Not affiliated with the EPA, FEMA, NRC, or any government agency. For informational purposes only.
+  </div>
+</footer>
+</body>
+</html>

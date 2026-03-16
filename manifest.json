@@ -1,0 +1,30 @@
+{
+  "name": "Radiation Monitor — Live EPA RadNet Dashboard",
+  "short_name": "RadMonitor",
+  "description": "Live U.S. radiation monitoring from EPA RadNet. Clear, accessible, mobile-first.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#060a10",
+  "theme_color": "#060a10",
+  "orientation": "any",
+  "scope": "/",
+  "lang": "en-US",
+  "categories": ["news", "utilities"],
+  "icons": [
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Live Map",
+      "url": "/",
+      "description": "View live radiation map"
+    },
+    {
+      "name": "Emergency Preparedness",
+      "url": "/pages/emergency-preparedness.html",
+      "description": "Emergency preparedness guide"
+    }
+  ]
+}

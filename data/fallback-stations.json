@@ -1,0 +1,1253 @@
+[
+  {
+    "id": "AK_ANCHORAGE",
+    "state": "AK",
+    "city": "ANCHORAGE",
+    "lat": 61.218,
+    "lng": -149.9,
+    "name": "Anchorage, AK",
+    "baseline": 75
+  },
+  {
+    "id": "AK_FAIRBANKS",
+    "state": "AK",
+    "city": "FAIRBANKS",
+    "lat": 64.838,
+    "lng": -147.716,
+    "name": "Fairbanks, AK",
+    "baseline": 73
+  },
+  {
+    "id": "AL_BIRMINGHAM",
+    "state": "AL",
+    "city": "BIRMINGHAM",
+    "lat": 33.52,
+    "lng": -86.803,
+    "name": "Birmingham, AL",
+    "baseline": 83
+  },
+  {
+    "id": "AL_HUNTSVILLE",
+    "state": "AL",
+    "city": "HUNTSVILLE",
+    "lat": 34.73,
+    "lng": -86.586,
+    "name": "Huntsville, AL",
+    "baseline": 84
+  },
+  {
+    "id": "AL_MONTGOMERY",
+    "state": "AL",
+    "city": "MONTGOMERY",
+    "lat": 32.361,
+    "lng": -86.279,
+    "name": "Montgomery, AL",
+    "baseline": 82
+  },
+  {
+    "id": "AR_FORT_SMITH",
+    "state": "AR",
+    "city": "FORT SMITH",
+    "lat": 35.386,
+    "lng": -94.398,
+    "name": "Fort Smith, AR",
+    "baseline": 79
+  },
+  {
+    "id": "AR_LITTLE_ROCK",
+    "state": "AR",
+    "city": "LITTLE ROCK",
+    "lat": 34.736,
+    "lng": -92.331,
+    "name": "Little Rock, AR",
+    "baseline": 78
+  },
+  {
+    "id": "AZ_FLAGSTAFF",
+    "state": "AZ",
+    "city": "FLAGSTAFF",
+    "lat": 35.198,
+    "lng": -111.651,
+    "name": "Flagstaff, AZ",
+    "baseline": 115
+  },
+  {
+    "id": "AZ_PHOENIX",
+    "state": "AZ",
+    "city": "PHOENIX",
+    "lat": 33.448,
+    "lng": -112.074,
+    "name": "Phoenix, AZ",
+    "baseline": 95
+  },
+  {
+    "id": "AZ_TUCSON",
+    "state": "AZ",
+    "city": "TUCSON",
+    "lat": 32.222,
+    "lng": -110.925,
+    "name": "Tucson, AZ",
+    "baseline": 98
+  },
+  {
+    "id": "CA_FRESNO",
+    "state": "CA",
+    "city": "FRESNO",
+    "lat": 36.737,
+    "lng": -119.787,
+    "name": "Fresno, CA",
+    "baseline": 75
+  },
+  {
+    "id": "CA_LOS_ANGELES",
+    "state": "CA",
+    "city": "LOS ANGELES",
+    "lat": 34.052,
+    "lng": -118.244,
+    "name": "Los Angeles, CA",
+    "baseline": 72
+  },
+  {
+    "id": "CA_SACRAMENTO",
+    "state": "CA",
+    "city": "SACRAMENTO",
+    "lat": 38.581,
+    "lng": -121.494,
+    "name": "Sacramento, CA",
+    "baseline": 73
+  },
+  {
+    "id": "CA_SAN_DIEGO",
+    "state": "CA",
+    "city": "SAN DIEGO",
+    "lat": 32.715,
+    "lng": -117.157,
+    "name": "San Diego, CA",
+    "baseline": 69
+  },
+  {
+    "id": "CA_SAN_FRANCISCO",
+    "state": "CA",
+    "city": "SAN FRANCISCO",
+    "lat": 37.775,
+    "lng": -122.419,
+    "name": "San Francisco, CA",
+    "baseline": 70
+  },
+  {
+    "id": "CA_SAN_JOSE",
+    "state": "CA",
+    "city": "SAN JOSE",
+    "lat": 37.338,
+    "lng": -121.886,
+    "name": "San Jose, CA",
+    "baseline": 71
+  },
+  {
+    "id": "CO_COLORADO_SPRINGS",
+    "state": "CO",
+    "city": "COLORADO SPRINGS",
+    "lat": 38.834,
+    "lng": -104.821,
+    "name": "Colorado Springs, CO",
+    "baseline": 114
+  },
+  {
+    "id": "CO_DENVER",
+    "state": "CO",
+    "city": "DENVER",
+    "lat": 39.737,
+    "lng": -104.984,
+    "name": "Denver, CO",
+    "baseline": 112
+  },
+  {
+    "id": "CO_GRAND_JUNCTION",
+    "state": "CO",
+    "city": "GRAND JUNCTION",
+    "lat": 39.064,
+    "lng": -108.551,
+    "name": "Grand Junction, CO",
+    "baseline": 108
+  },
+  {
+    "id": "CT_HARTFORD",
+    "state": "CT",
+    "city": "HARTFORD",
+    "lat": 41.763,
+    "lng": -72.685,
+    "name": "Hartford, CT",
+    "baseline": 80
+  },
+  {
+    "id": "CT_NEW_HAVEN",
+    "state": "CT",
+    "city": "NEW HAVEN",
+    "lat": 41.308,
+    "lng": -72.928,
+    "name": "New Haven, CT",
+    "baseline": 79
+  },
+  {
+    "id": "DC_WASHINGTON",
+    "state": "DC",
+    "city": "WASHINGTON",
+    "lat": 38.897,
+    "lng": -77.037,
+    "name": "Washington, DC",
+    "baseline": 80
+  },
+  {
+    "id": "DE_WILMINGTON",
+    "state": "DE",
+    "city": "WILMINGTON",
+    "lat": 39.745,
+    "lng": -75.546,
+    "name": "Wilmington, DE",
+    "baseline": 79
+  },
+  {
+    "id": "FL_JACKSONVILLE",
+    "state": "FL",
+    "city": "JACKSONVILLE",
+    "lat": 30.332,
+    "lng": -81.656,
+    "name": "Jacksonville, FL",
+    "baseline": 68
+  },
+  {
+    "id": "FL_MIAMI",
+    "state": "FL",
+    "city": "MIAMI",
+    "lat": 25.774,
+    "lng": -80.194,
+    "name": "Miami, FL",
+    "baseline": 66
+  },
+  {
+    "id": "FL_ORLANDO",
+    "state": "FL",
+    "city": "ORLANDO",
+    "lat": 28.538,
+    "lng": -81.379,
+    "name": "Orlando, FL",
+    "baseline": 68
+  },
+  {
+    "id": "FL_PENSACOLA",
+    "state": "FL",
+    "city": "PENSACOLA",
+    "lat": 30.421,
+    "lng": -87.217,
+    "name": "Pensacola, FL",
+    "baseline": 68
+  },
+  {
+    "id": "FL_TALLAHASSEE",
+    "state": "FL",
+    "city": "TALLAHASSEE",
+    "lat": 30.438,
+    "lng": -84.28,
+    "name": "Tallahassee, FL",
+    "baseline": 69
+  },
+  {
+    "id": "FL_TAMPA",
+    "state": "FL",
+    "city": "TAMPA",
+    "lat": 27.947,
+    "lng": -82.459,
+    "name": "Tampa, FL",
+    "baseline": 67
+  },
+  {
+    "id": "GA_ATLANTA",
+    "state": "GA",
+    "city": "ATLANTA",
+    "lat": 33.749,
+    "lng": -84.388,
+    "name": "Atlanta, GA",
+    "baseline": 83
+  },
+  {
+    "id": "GA_AUGUSTA",
+    "state": "GA",
+    "city": "AUGUSTA",
+    "lat": 33.471,
+    "lng": -82.01,
+    "name": "Augusta, GA",
+    "baseline": 78
+  },
+  {
+    "id": "GA_SAVANNAH",
+    "state": "GA",
+    "city": "SAVANNAH",
+    "lat": 32.084,
+    "lng": -81.1,
+    "name": "Savannah, GA",
+    "baseline": 76
+  },
+  {
+    "id": "HI_HILO",
+    "state": "HI",
+    "city": "HILO",
+    "lat": 19.706,
+    "lng": -155.084,
+    "name": "Hilo, HI",
+    "baseline": 63
+  },
+  {
+    "id": "HI_HONOLULU",
+    "state": "HI",
+    "city": "HONOLULU",
+    "lat": 21.307,
+    "lng": -157.858,
+    "name": "Honolulu, HI",
+    "baseline": 64
+  },
+  {
+    "id": "IA_CEDAR_RAPIDS",
+    "state": "IA",
+    "city": "CEDAR RAPIDS",
+    "lat": 41.977,
+    "lng": -91.665,
+    "name": "Cedar Rapids, IA",
+    "baseline": 85
+  },
+  {
+    "id": "IA_DES_MOINES",
+    "state": "IA",
+    "city": "DES MOINES",
+    "lat": 41.59,
+    "lng": -93.62,
+    "name": "Des Moines, IA",
+    "baseline": 86
+  },
+  {
+    "id": "ID_BOISE",
+    "state": "ID",
+    "city": "BOISE",
+    "lat": 43.615,
+    "lng": -116.202,
+    "name": "Boise, ID",
+    "baseline": 97
+  },
+  {
+    "id": "ID_IDAHO_FALLS",
+    "state": "ID",
+    "city": "IDAHO FALLS",
+    "lat": 43.492,
+    "lng": -112.034,
+    "name": "Idaho Falls, ID",
+    "baseline": 100
+  },
+  {
+    "id": "IL_CHICAGO",
+    "state": "IL",
+    "city": "CHICAGO",
+    "lat": 41.85,
+    "lng": -87.65,
+    "name": "Chicago, IL",
+    "baseline": 82
+  },
+  {
+    "id": "IL_PEORIA",
+    "state": "IL",
+    "city": "PEORIA",
+    "lat": 40.694,
+    "lng": -89.589,
+    "name": "Peoria, IL",
+    "baseline": 83
+  },
+  {
+    "id": "IL_SPRINGFIELD",
+    "state": "IL",
+    "city": "SPRINGFIELD",
+    "lat": 39.783,
+    "lng": -89.65,
+    "name": "Springfield, IL",
+    "baseline": 83
+  },
+  {
+    "id": "IN_FORT_WAYNE",
+    "state": "IN",
+    "city": "FORT WAYNE",
+    "lat": 41.079,
+    "lng": -85.139,
+    "name": "Fort Wayne, IN",
+    "baseline": 83
+  },
+  {
+    "id": "IN_INDIANAPOLIS",
+    "state": "IN",
+    "city": "INDIANAPOLIS",
+    "lat": 39.791,
+    "lng": -86.148,
+    "name": "Indianapolis, IN",
+    "baseline": 84
+  },
+  {
+    "id": "KS_TOPEKA",
+    "state": "KS",
+    "city": "TOPEKA",
+    "lat": 39.049,
+    "lng": -95.678,
+    "name": "Topeka, KS",
+    "baseline": 89
+  },
+  {
+    "id": "KS_WICHITA",
+    "state": "KS",
+    "city": "WICHITA",
+    "lat": 37.692,
+    "lng": -97.33,
+    "name": "Wichita, KS",
+    "baseline": 90
+  },
+  {
+    "id": "KY_LEXINGTON",
+    "state": "KY",
+    "city": "LEXINGTON",
+    "lat": 38.04,
+    "lng": -84.503,
+    "name": "Lexington, KY",
+    "baseline": 82
+  },
+  {
+    "id": "KY_LOUISVILLE",
+    "state": "KY",
+    "city": "LOUISVILLE",
+    "lat": 38.254,
+    "lng": -85.759,
+    "name": "Louisville, KY",
+    "baseline": 83
+  },
+  {
+    "id": "LA_BATON_ROUGE",
+    "state": "LA",
+    "city": "BATON ROUGE",
+    "lat": 30.451,
+    "lng": -91.154,
+    "name": "Baton Rouge, LA",
+    "baseline": 71
+  },
+  {
+    "id": "LA_NEW_ORLEANS",
+    "state": "LA",
+    "city": "NEW ORLEANS",
+    "lat": 29.954,
+    "lng": -90.075,
+    "name": "New Orleans, LA",
+    "baseline": 70
+  },
+  {
+    "id": "LA_SHREVEPORT",
+    "state": "LA",
+    "city": "SHREVEPORT",
+    "lat": 32.525,
+    "lng": -93.75,
+    "name": "Shreveport, LA",
+    "baseline": 74
+  },
+  {
+    "id": "MA_BOSTON",
+    "state": "MA",
+    "city": "BOSTON",
+    "lat": 42.358,
+    "lng": -71.06,
+    "name": "Boston, MA",
+    "baseline": 78
+  },
+  {
+    "id": "MA_SPRINGFIELD",
+    "state": "MA",
+    "city": "SPRINGFIELD",
+    "lat": 42.101,
+    "lng": -72.589,
+    "name": "Springfield, MA",
+    "baseline": 79
+  },
+  {
+    "id": "MD_BALTIMORE",
+    "state": "MD",
+    "city": "BALTIMORE",
+    "lat": 39.29,
+    "lng": -76.612,
+    "name": "Baltimore, MD",
+    "baseline": 80
+  },
+  {
+    "id": "MD_SALISBURY",
+    "state": "MD",
+    "city": "SALISBURY",
+    "lat": 38.36,
+    "lng": -75.6,
+    "name": "Salisbury, MD",
+    "baseline": 78
+  },
+  {
+    "id": "ME_BANGOR",
+    "state": "ME",
+    "city": "BANGOR",
+    "lat": 44.801,
+    "lng": -68.778,
+    "name": "Bangor, ME",
+    "baseline": 80
+  },
+  {
+    "id": "ME_PORTLAND",
+    "state": "ME",
+    "city": "PORTLAND",
+    "lat": 43.661,
+    "lng": -70.255,
+    "name": "Portland, ME",
+    "baseline": 79
+  },
+  {
+    "id": "MI_DETROIT",
+    "state": "MI",
+    "city": "DETROIT",
+    "lat": 42.331,
+    "lng": -83.046,
+    "name": "Detroit, MI",
+    "baseline": 82
+  },
+  {
+    "id": "MI_GRAND_RAPIDS",
+    "state": "MI",
+    "city": "GRAND RAPIDS",
+    "lat": 42.964,
+    "lng": -85.668,
+    "name": "Grand Rapids, MI",
+    "baseline": 82
+  },
+  {
+    "id": "MI_LANSING",
+    "state": "MI",
+    "city": "LANSING",
+    "lat": 42.732,
+    "lng": -84.556,
+    "name": "Lansing, MI",
+    "baseline": 82
+  },
+  {
+    "id": "MN_DULUTH",
+    "state": "MN",
+    "city": "DULUTH",
+    "lat": 46.786,
+    "lng": -92.101,
+    "name": "Duluth, MN",
+    "baseline": 87
+  },
+  {
+    "id": "MN_MINNEAPOLIS",
+    "state": "MN",
+    "city": "MINNEAPOLIS",
+    "lat": 44.979,
+    "lng": -93.265,
+    "name": "Minneapolis, MN",
+    "baseline": 86
+  },
+  {
+    "id": "MO_KANSAS_CITY",
+    "state": "MO",
+    "city": "KANSAS CITY",
+    "lat": 39.099,
+    "lng": -94.578,
+    "name": "Kansas City, MO",
+    "baseline": 85
+  },
+  {
+    "id": "MO_SPRINGFIELD",
+    "state": "MO",
+    "city": "SPRINGFIELD",
+    "lat": 37.208,
+    "lng": -93.293,
+    "name": "Springfield, MO",
+    "baseline": 84
+  },
+  {
+    "id": "MO_ST_LOUIS",
+    "state": "MO",
+    "city": "ST. LOUIS",
+    "lat": 38.627,
+    "lng": -90.197,
+    "name": "St. Louis, MO",
+    "baseline": 84
+  },
+  {
+    "id": "MS_BILOXI",
+    "state": "MS",
+    "city": "BILOXI",
+    "lat": 30.396,
+    "lng": -88.885,
+    "name": "Biloxi, MS",
+    "baseline": 72
+  },
+  {
+    "id": "MS_JACKSON",
+    "state": "MS",
+    "city": "JACKSON",
+    "lat": 32.298,
+    "lng": -90.185,
+    "name": "Jackson, MS",
+    "baseline": 76
+  },
+  {
+    "id": "MT_BILLINGS",
+    "state": "MT",
+    "city": "BILLINGS",
+    "lat": 45.783,
+    "lng": -108.501,
+    "name": "Billings, MT",
+    "baseline": 101
+  },
+  {
+    "id": "MT_HELENA",
+    "state": "MT",
+    "city": "HELENA",
+    "lat": 46.595,
+    "lng": -112.027,
+    "name": "Helena, MT",
+    "baseline": 103
+  },
+  {
+    "id": "NC_CHARLOTTE",
+    "state": "NC",
+    "city": "CHARLOTTE",
+    "lat": 35.227,
+    "lng": -80.843,
+    "name": "Charlotte, NC",
+    "baseline": 82
+  },
+  {
+    "id": "NC_GREENSBORO",
+    "state": "NC",
+    "city": "GREENSBORO",
+    "lat": 36.073,
+    "lng": -79.792,
+    "name": "Greensboro, NC",
+    "baseline": 81
+  },
+  {
+    "id": "NC_RALEIGH",
+    "state": "NC",
+    "city": "RALEIGH",
+    "lat": 35.779,
+    "lng": -78.638,
+    "name": "Raleigh, NC",
+    "baseline": 81
+  },
+  {
+    "id": "NC_WILMINGTON",
+    "state": "NC",
+    "city": "WILMINGTON",
+    "lat": 34.226,
+    "lng": -77.945,
+    "name": "Wilmington, NC",
+    "baseline": 77
+  },
+  {
+    "id": "ND_BISMARCK",
+    "state": "ND",
+    "city": "BISMARCK",
+    "lat": 46.813,
+    "lng": -100.779,
+    "name": "Bismarck, ND",
+    "baseline": 92
+  },
+  {
+    "id": "ND_FARGO",
+    "state": "ND",
+    "city": "FARGO",
+    "lat": 46.877,
+    "lng": -96.789,
+    "name": "Fargo, ND",
+    "baseline": 90
+  },
+  {
+    "id": "NE_LINCOLN",
+    "state": "NE",
+    "city": "LINCOLN",
+    "lat": 40.813,
+    "lng": -96.703,
+    "name": "Lincoln, NE",
+    "baseline": 87
+  },
+  {
+    "id": "NE_OMAHA",
+    "state": "NE",
+    "city": "OMAHA",
+    "lat": 41.258,
+    "lng": -95.938,
+    "name": "Omaha, NE",
+    "baseline": 88
+  },
+  {
+    "id": "NH_CONCORD",
+    "state": "NH",
+    "city": "CONCORD",
+    "lat": 43.207,
+    "lng": -71.537,
+    "name": "Concord, NH",
+    "baseline": 80
+  },
+  {
+    "id": "NJ_ATLANTIC_CITY",
+    "state": "NJ",
+    "city": "ATLANTIC CITY",
+    "lat": 39.364,
+    "lng": -74.423,
+    "name": "Atlantic City, NJ",
+    "baseline": 78
+  },
+  {
+    "id": "NJ_NEWARK",
+    "state": "NJ",
+    "city": "NEWARK",
+    "lat": 40.735,
+    "lng": -74.172,
+    "name": "Newark, NJ",
+    "baseline": 79
+  },
+  {
+    "id": "NJ_TRENTON",
+    "state": "NJ",
+    "city": "TRENTON",
+    "lat": 40.221,
+    "lng": -74.756,
+    "name": "Trenton, NJ",
+    "baseline": 80
+  },
+  {
+    "id": "NM_ALBUQUERQUE",
+    "state": "NM",
+    "city": "ALBUQUERQUE",
+    "lat": 35.084,
+    "lng": -106.651,
+    "name": "Albuquerque, NM",
+    "baseline": 108
+  },
+  {
+    "id": "NM_SANTA_FE",
+    "state": "NM",
+    "city": "SANTA FE",
+    "lat": 35.687,
+    "lng": -105.938,
+    "name": "Santa Fe, NM",
+    "baseline": 112
+  },
+  {
+    "id": "NV_LAS_VEGAS",
+    "state": "NV",
+    "city": "LAS VEGAS",
+    "lat": 36.175,
+    "lng": -115.137,
+    "name": "Las Vegas, NV",
+    "baseline": 99
+  },
+  {
+    "id": "NV_RENO",
+    "state": "NV",
+    "city": "RENO",
+    "lat": 39.529,
+    "lng": -119.814,
+    "name": "Reno, NV",
+    "baseline": 102
+  },
+  {
+    "id": "NY_ALBANY",
+    "state": "NY",
+    "city": "ALBANY",
+    "lat": 42.651,
+    "lng": -73.755,
+    "name": "Albany, NY",
+    "baseline": 80
+  },
+  {
+    "id": "NY_BUFFALO",
+    "state": "NY",
+    "city": "BUFFALO",
+    "lat": 42.886,
+    "lng": -78.878,
+    "name": "Buffalo, NY",
+    "baseline": 80
+  },
+  {
+    "id": "NY_NEW_YORK",
+    "state": "NY",
+    "city": "NEW YORK",
+    "lat": 40.714,
+    "lng": -74.006,
+    "name": "New York, NY",
+    "baseline": 78
+  },
+  {
+    "id": "NY_ROCHESTER",
+    "state": "NY",
+    "city": "ROCHESTER",
+    "lat": 43.157,
+    "lng": -77.615,
+    "name": "Rochester, NY",
+    "baseline": 80
+  },
+  {
+    "id": "NY_SYRACUSE",
+    "state": "NY",
+    "city": "SYRACUSE",
+    "lat": 43.048,
+    "lng": -76.148,
+    "name": "Syracuse, NY",
+    "baseline": 81
+  },
+  {
+    "id": "OH_CINCINNATI",
+    "state": "OH",
+    "city": "CINCINNATI",
+    "lat": 39.103,
+    "lng": -84.512,
+    "name": "Cincinnati, OH",
+    "baseline": 83
+  },
+  {
+    "id": "OH_CLEVELAND",
+    "state": "OH",
+    "city": "CLEVELAND",
+    "lat": 41.499,
+    "lng": -81.695,
+    "name": "Cleveland, OH",
+    "baseline": 82
+  },
+  {
+    "id": "OH_COLUMBUS",
+    "state": "OH",
+    "city": "COLUMBUS",
+    "lat": 39.962,
+    "lng": -83.001,
+    "name": "Columbus, OH",
+    "baseline": 83
+  },
+  {
+    "id": "OH_TOLEDO",
+    "state": "OH",
+    "city": "TOLEDO",
+    "lat": 41.664,
+    "lng": -83.556,
+    "name": "Toledo, OH",
+    "baseline": 82
+  },
+  {
+    "id": "OK_OKLAHOMA_CITY",
+    "state": "OK",
+    "city": "OKLAHOMA CITY",
+    "lat": 35.472,
+    "lng": -97.52,
+    "name": "Oklahoma City, OK",
+    "baseline": 90
+  },
+  {
+    "id": "OK_TULSA",
+    "state": "OK",
+    "city": "TULSA",
+    "lat": 36.154,
+    "lng": -95.993,
+    "name": "Tulsa, OK",
+    "baseline": 88
+  },
+  {
+    "id": "OR_EUGENE",
+    "state": "OR",
+    "city": "EUGENE",
+    "lat": 44.052,
+    "lng": -123.087,
+    "name": "Eugene, OR",
+    "baseline": 81
+  },
+  {
+    "id": "OR_PORTLAND",
+    "state": "OR",
+    "city": "PORTLAND",
+    "lat": 45.523,
+    "lng": -122.676,
+    "name": "Portland, OR",
+    "baseline": 80
+  },
+  {
+    "id": "OR_SALEM",
+    "state": "OR",
+    "city": "SALEM",
+    "lat": 44.942,
+    "lng": -123.029,
+    "name": "Salem, OR",
+    "baseline": 80
+  },
+  {
+    "id": "PA_ALLENTOWN",
+    "state": "PA",
+    "city": "ALLENTOWN",
+    "lat": 40.608,
+    "lng": -75.49,
+    "name": "Allentown, PA",
+    "baseline": 80
+  },
+  {
+    "id": "PA_HARRISBURG",
+    "state": "PA",
+    "city": "HARRISBURG",
+    "lat": 40.274,
+    "lng": -76.884,
+    "name": "Harrisburg, PA",
+    "baseline": 81
+  },
+  {
+    "id": "PA_PHILADELPHIA",
+    "state": "PA",
+    "city": "PHILADELPHIA",
+    "lat": 39.952,
+    "lng": -75.164,
+    "name": "Philadelphia, PA",
+    "baseline": 80
+  },
+  {
+    "id": "PA_PITTSBURGH",
+    "state": "PA",
+    "city": "PITTSBURGH",
+    "lat": 40.441,
+    "lng": -79.996,
+    "name": "Pittsburgh, PA",
+    "baseline": 82
+  },
+  {
+    "id": "PR_PONCE",
+    "state": "PR",
+    "city": "PONCE",
+    "lat": 18.011,
+    "lng": -66.614,
+    "name": "Ponce, PR",
+    "baseline": 63
+  },
+  {
+    "id": "PR_SAN_JUAN",
+    "state": "PR",
+    "city": "SAN JUAN",
+    "lat": 18.466,
+    "lng": -66.106,
+    "name": "San Juan, PR",
+    "baseline": 64
+  },
+  {
+    "id": "RI_PROVIDENCE",
+    "state": "RI",
+    "city": "PROVIDENCE",
+    "lat": 41.823,
+    "lng": -71.412,
+    "name": "Providence, RI",
+    "baseline": 79
+  },
+  {
+    "id": "SC_CHARLESTON",
+    "state": "SC",
+    "city": "CHARLESTON",
+    "lat": 32.776,
+    "lng": -79.931,
+    "name": "Charleston, SC",
+    "baseline": 77
+  },
+  {
+    "id": "SC_COLUMBIA",
+    "state": "SC",
+    "city": "COLUMBIA",
+    "lat": 34.001,
+    "lng": -81.035,
+    "name": "Columbia, SC",
+    "baseline": 81
+  },
+  {
+    "id": "SC_GREENVILLE",
+    "state": "SC",
+    "city": "GREENVILLE",
+    "lat": 34.852,
+    "lng": -82.394,
+    "name": "Greenville, SC",
+    "baseline": 82
+  },
+  {
+    "id": "SD_RAPID_CITY",
+    "state": "SD",
+    "city": "RAPID CITY",
+    "lat": 44.081,
+    "lng": -103.231,
+    "name": "Rapid City, SD",
+    "baseline": 97
+  },
+  {
+    "id": "SD_SIOUX_FALLS",
+    "state": "SD",
+    "city": "SIOUX FALLS",
+    "lat": 43.549,
+    "lng": -96.7,
+    "name": "Sioux Falls, SD",
+    "baseline": 90
+  },
+  {
+    "id": "TN_CHATTANOOGA",
+    "state": "TN",
+    "city": "CHATTANOOGA",
+    "lat": 35.045,
+    "lng": -85.309,
+    "name": "Chattanooga, TN",
+    "baseline": 82
+  },
+  {
+    "id": "TN_KNOXVILLE",
+    "state": "TN",
+    "city": "KNOXVILLE",
+    "lat": 35.961,
+    "lng": -83.921,
+    "name": "Knoxville, TN",
+    "baseline": 83
+  },
+  {
+    "id": "TN_MEMPHIS",
+    "state": "TN",
+    "city": "MEMPHIS",
+    "lat": 35.149,
+    "lng": -90.049,
+    "name": "Memphis, TN",
+    "baseline": 79
+  },
+  {
+    "id": "TN_NASHVILLE",
+    "state": "TN",
+    "city": "NASHVILLE",
+    "lat": 36.166,
+    "lng": -86.784,
+    "name": "Nashville, TN",
+    "baseline": 82
+  },
+  {
+    "id": "TX_AMARILLO",
+    "state": "TX",
+    "city": "AMARILLO",
+    "lat": 35.222,
+    "lng": -101.831,
+    "name": "Amarillo, TX",
+    "baseline": 96
+  },
+  {
+    "id": "TX_AUSTIN",
+    "state": "TX",
+    "city": "AUSTIN",
+    "lat": 30.267,
+    "lng": -97.743,
+    "name": "Austin, TX",
+    "baseline": 79
+  },
+  {
+    "id": "TX_DALLAS",
+    "state": "TX",
+    "city": "DALLAS",
+    "lat": 32.803,
+    "lng": -96.77,
+    "name": "Dallas, TX",
+    "baseline": 80
+  },
+  {
+    "id": "TX_EL_PASO",
+    "state": "TX",
+    "city": "EL PASO",
+    "lat": 31.759,
+    "lng": -106.487,
+    "name": "El Paso, TX",
+    "baseline": 100
+  },
+  {
+    "id": "TX_FORT_WORTH",
+    "state": "TX",
+    "city": "FORT WORTH",
+    "lat": 32.726,
+    "lng": -97.321,
+    "name": "Fort Worth, TX",
+    "baseline": 80
+  },
+  {
+    "id": "TX_HOUSTON",
+    "state": "TX",
+    "city": "HOUSTON",
+    "lat": 29.763,
+    "lng": -95.363,
+    "name": "Houston, TX",
+    "baseline": 74
+  },
+  {
+    "id": "TX_LUBBOCK",
+    "state": "TX",
+    "city": "LUBBOCK",
+    "lat": 33.578,
+    "lng": -101.856,
+    "name": "Lubbock, TX",
+    "baseline": 95
+  },
+  {
+    "id": "TX_SAN_ANTONIO",
+    "state": "TX",
+    "city": "SAN ANTONIO",
+    "lat": 29.424,
+    "lng": -98.494,
+    "name": "San Antonio, TX",
+    "baseline": 78
+  },
+  {
+    "id": "UT_PROVO",
+    "state": "UT",
+    "city": "PROVO",
+    "lat": 40.233,
+    "lng": -111.658,
+    "name": "Provo, UT",
+    "baseline": 104
+  },
+  {
+    "id": "UT_SALT_LAKE",
+    "state": "UT",
+    "city": "SALT LAKE CITY",
+    "lat": 40.758,
+    "lng": -111.888,
+    "name": "Salt Lake City, UT",
+    "baseline": 105
+  },
+  {
+    "id": "VA_NORFOLK",
+    "state": "VA",
+    "city": "NORFOLK",
+    "lat": 36.851,
+    "lng": -76.286,
+    "name": "Norfolk, VA",
+    "baseline": 78
+  },
+  {
+    "id": "VA_RICHMOND",
+    "state": "VA",
+    "city": "RICHMOND",
+    "lat": 37.541,
+    "lng": -77.434,
+    "name": "Richmond, VA",
+    "baseline": 81
+  },
+  {
+    "id": "VA_ROANOKE",
+    "state": "VA",
+    "city": "ROANOKE",
+    "lat": 37.271,
+    "lng": -79.942,
+    "name": "Roanoke, VA",
+    "baseline": 82
+  },
+  {
+    "id": "VT_BURLINGTON",
+    "state": "VT",
+    "city": "BURLINGTON",
+    "lat": 44.476,
+    "lng": -73.212,
+    "name": "Burlington, VT",
+    "baseline": 81
+  },
+  {
+    "id": "WA_RICHLAND",
+    "state": "WA",
+    "city": "RICHLAND",
+    "lat": 46.286,
+    "lng": -119.284,
+    "name": "Richland, WA",
+    "baseline": 90
+  },
+  {
+    "id": "WA_SEATTLE",
+    "state": "WA",
+    "city": "SEATTLE",
+    "lat": 47.608,
+    "lng": -122.335,
+    "name": "Seattle, WA",
+    "baseline": 78
+  },
+  {
+    "id": "WA_SPOKANE",
+    "state": "WA",
+    "city": "SPOKANE",
+    "lat": 47.659,
+    "lng": -117.426,
+    "name": "Spokane, WA",
+    "baseline": 88
+  },
+  {
+    "id": "WA_TACOMA",
+    "state": "WA",
+    "city": "TACOMA",
+    "lat": 47.253,
+    "lng": -122.444,
+    "name": "Tacoma, WA",
+    "baseline": 78
+  },
+  {
+    "id": "WI_GREEN_BAY",
+    "state": "WI",
+    "city": "GREEN BAY",
+    "lat": 44.519,
+    "lng": -88.02,
+    "name": "Green Bay, WI",
+    "baseline": 83
+  },
+  {
+    "id": "WI_MADISON",
+    "state": "WI",
+    "city": "MADISON",
+    "lat": 43.073,
+    "lng": -89.401,
+    "name": "Madison, WI",
+    "baseline": 83
+  },
+  {
+    "id": "WI_MILWAUKEE",
+    "state": "WI",
+    "city": "MILWAUKEE",
+    "lat": 43.039,
+    "lng": -87.906,
+    "name": "Milwaukee, WI",
+    "baseline": 83
+  },
+  {
+    "id": "WV_CHARLESTON",
+    "state": "WV",
+    "city": "CHARLESTON",
+    "lat": 38.35,
+    "lng": -81.633,
+    "name": "Charleston, WV",
+    "baseline": 84
+  },
+  {
+    "id": "WV_HUNTINGTON",
+    "state": "WV",
+    "city": "HUNTINGTON",
+    "lat": 38.419,
+    "lng": -82.445,
+    "name": "Huntington, WV",
+    "baseline": 83
+  },
+  {
+    "id": "WY_CASPER",
+    "state": "WY",
+    "city": "CASPER",
+    "lat": 42.867,
+    "lng": -106.313,
+    "name": "Casper, WY",
+    "baseline": 106
+  },
+  {
+    "id": "WY_CHEYENNE",
+    "state": "WY",
+    "city": "CHEYENNE",
+    "lat": 41.14,
+    "lng": -104.82,
+    "name": "Cheyenne, WY",
+    "baseline": 107
+  }
+]

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+  <meta name="theme-color" content="#060a10"/>
+  <meta name="description" content="Live U.S. radiation monitoring dashboard. EPA RadNet data visualized clearly. Not an official emergency alert system."/>
+  <title>Radiation Monitor — Live EPA RadNet Dashboard</title>
+  <link rel="manifest" href="manifest.json"/>
+  <link rel="apple-touch-icon" href="assets/icons/icon-192.png"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='none' stroke='%234ade80' stroke-width='8'/><circle cx='50' cy='50' r='10' fill='%234ade80'/></svg>"/>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════
+     AD ZONE 1 — LEADERBOARD TOP (728×90)
+     Status: HIDDEN — enable when Google AdSense approved
+     To enable: remove style="display:none" and paste AdSense code inside
+     ═══════════════════════════════════════════════════════════ -->
+<div id="ad-leaderboard-top" class="ad-zone ad-leaderboard" style="display:none;" aria-hidden="true">
+  <!-- PASTE GOOGLE ADSENSE 728x90 CODE HERE -->
+  <!-- Example slot placeholder — replace with real AdSense snippet:
+  <ins class="adsbygoogle"
+       style="display:inline-block;width:728px;height:90px"
+       data-ad-client="ca-pub-XXXXXXXXXXXXXXXXX"
+       data-ad-slot="XXXXXXXXXX"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  -->
+</div>
+
+<!-- ── Navigation ─────────────────────────────────────── -->
+<nav id="topnav" role="navigation" aria-label="Main navigation">
+  <a href="index.html" class="logo-wrap" aria-label="Radiation Monitor Home">
+    <div class="logo-ring" aria-hidden="true"></div>
+    <div>
+      <div class="logo-text">RAD<span>MONITOR</span></div>
+      <div class="logo-sub">Live EPA Data</div>
+    </div>
+  </a>
+
+  <div class="nav-links">
+    <a href="pages/radiation-basics.html" class="nav-link">Basics</a>
+    <a href="pages/emergency-preparedness.html" class="nav-link">Preparedness</a>
+    <a href="pages/faq.html" class="nav-link">FAQ</a>
+    <a href="pages/support.html" class="nav-link">Support</a>
+    <a href="pages/about.html" class="nav-link">About</a>
+  </div>
+
+  <div class="search-wrap" role="search">
+    <span class="search-icon" aria-hidden="true">⌕</span>
+    <input type="search" id="search-input" placeholder="Search city…" autocomplete="off" aria-label="Search monitoring stations"/>
+    <div id="search-results" role="listbox" aria-label="Search results"></div>
+  </div>
+
+  <button id="install-btn" aria-label="Install app">⬇ Install App</button>
+  <div id="utc-clock" aria-live="off"></div>
+</nav>
+
+<!-- ── Map Area ───────────────────────────────────────── -->
+<main id="map-area" role="main">
+  <div id="map" aria-label="U.S. radiation monitoring station map"></div>
+
+  <!-- Station Detail Panel -->
+  <aside id="info-panel" aria-label="Station detail" aria-live="polite">
+    <div class="panel-header">
+      <div id="panel-title">Select a Station</div>
+      <button id="panel-close" aria-label="Close panel">✕</button>
+    </div>
+    <div id="panel-body">
+      <p style="color:var(--text-dim);font-size:13px;padding:24px 0;text-align:center;line-height:1.6;">
+        Tap any station on the map<br>to view radiation data.
+      </p>
+    </div>
+  </aside>
+
+  <!-- Map Legend -->
+  <div id="legend" role="complementary" aria-label="Map legend">
+    <div class="legend-title">Gamma Radiation</div>
+    <div class="legend-row"><div class="legend-pip pip-normal"></div> Normal <span class="legend-range">&lt;100 nSv/h</span></div>
+    <div class="legend-row"><div class="legend-pip pip-elevated"></div> Elevated <span class="legend-range">100–149</span></div>
+    <div class="legend-row"><div class="legend-pip pip-alert"></div> Alert <span class="legend-range">150+</span></div>
+    <div class="legend-row"><div class="legend-pip pip-nodata"></div> No Data</div>
+  </div>
+</main>
+
+<!-- ── Stats Bar ──────────────────────────────────────── -->
+<div id="statsbar" role="contentinfo">
+  <div class="stat-cell">
+    <div class="stat-pip pip-g"></div>
+    <span class="stat-lbl">Normal</span>
+    <span class="stat-val" id="stat-normal">—</span>
+  </div>
+  <div class="stat-cell">
+    <div class="stat-pip pip-a"></div>
+    <span class="stat-lbl">Elevated</span>
+    <span class="stat-val" id="stat-elevated">—</span>
+  </div>
+  <div class="stat-cell">
+    <div class="stat-pip pip-r"></div>
+    <span class="stat-lbl">Alert</span>
+    <span class="stat-val" id="stat-alert">—</span>
+  </div>
+  <div class="stat-cell">
+    <div class="stat-pip pip-m"></div>
+    <span class="stat-lbl">No Data</span>
+    <span class="stat-val" id="stat-nodata">—</span>
+  </div>
+  <div class="stat-cell">
+    <div class="stat-pip pip-b"></div>
+    <span class="stat-lbl">Nat'l Avg</span>
+    <span class="stat-val" id="stat-avg">—</span>
+  </div>
+  <div class="stat-cell">
+    <div class="stat-pip pip-m"></div>
+    <span class="stat-lbl">Stations</span>
+    <span class="stat-val" id="stat-loaded">0/65</span>
+  </div>
+  <div id="progress-wrap">
+    <span id="status-text">Initializing…</span>
+    <div id="progress-track"><div id="progress-bar"></div></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     BELOW THE FOLD — scrollable section
+     Contains: Amazon affiliate products + Google footer ad
+     ═══════════════════════════════════════════════════════════ -->
+<section id="below-fold">
+
+  <!-- ── Amazon Affiliate Products ──────────────────────── -->
+  <div id="amazon-section">
+    <div class="amazon-header">
+      <div class="amazon-label">☢ PREPAREDNESS GEAR</div>
+      <div class="amazon-sub">Trusted emergency equipment — affiliate links support this site</div>
+    </div>
+
+    <div class="amazon-grid">
+
+      <!-- PRODUCT 1 — Emergency Radio -->
+      <!-- INSTRUCTIONS: Replace href="#" with your Amazon affiliate link -->
+      <!-- INSTRUCTIONS: Replace the img src with your Amazon product image URL -->
+      <a class="amazon-card" href="#" target="_blank" rel="noopener sponsored" id="product-emergency-radio">
+        <div class="product-badge">TOP PICK</div>
+        <div class="product-img-wrap">
+          <!-- Replace src with Amazon product image URL -->
+          <div class="product-img-placeholder">📻</div>
+        </div>
+        <div class="product-info">
+          <div class="product-name">Emergency Weather Radio</div>
+          <div class="product-desc">NOAA alerts, hand crank + solar, USB charging. Essential for grid-down scenarios.</div>
+          <div class="product-cta">View on Amazon →</div>
+        </div>
+      </a>
+
+      <!-- PRODUCT 2 — Two-Way Radios -->
+      <!-- INSTRUCTIONS: Replace href="#" with your Amazon affiliate link -->
+      <a class="amazon-card" href="#" target="_blank" rel="noopener sponsored" id="product-two-way-radio">
+        <div class="product-img-wrap">
+          <div class="product-img-placeholder">📡</div>
+        </div>
+        <div class="product-info">
+          <div class="product-name">Two-Way Radios (Pair)</div>
+          <div class="product-desc">Long range walkie-talkies. Works when cell networks fail. Family preparedness essential.</div>
+          <div class="product-cta">View on Amazon →</div>
+        </div>
+      </a>
+
+      <!-- PRODUCT 3 — Add a third product if desired -->
+      <!-- INSTRUCTIONS: Replace href="#" with your Amazon affiliate link -->
+      <a class="amazon-card" href="#" target="_blank" rel="noopener sponsored" id="product-geiger">
+        <div class="product-img-wrap">
+          <div class="product-img-placeholder">☢</div>
+        </div>
+        <div class="product-info">
+          <div class="product-name">Radiation Detector</div>
+          <div class="product-desc">Personal Geiger counter for gamma, beta, and X-ray detection. Real hardware readings.</div>
+          <div class="product-cta">View on Amazon →</div>
+        </div>
+      </a>
+
+    </div>
+
+    <p class="amazon-disclosure">
+      Disclosure: As an Amazon Associate this site earns from qualifying purchases.
+      Product recommendations are editorially selected.
+    </p>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════
+       AD ZONE 2 — LEADERBOARD FOOTER (728×90)
+       Status: HIDDEN — enable when Google AdSense approved
+       To enable: remove style="display:none" and paste AdSense code inside
+       ═══════════════════════════════════════════════════════ -->
+  <div id="ad-leaderboard-footer" class="ad-zone ad-leaderboard" style="display:none;" aria-hidden="true">
+    <!-- PASTE GOOGLE ADSENSE 728x90 CODE HERE -->
+    <!-- Example slot placeholder — replace with real AdSense snippet:
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:728px;height:90px"
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXXXX"
+         data-ad-slot="XXXXXXXXXX"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    -->
+  </div>
+
+  <!-- Site footer -->
+  <footer id="site-footer">
+    <div class="footer-links">
+      <a href="pages/about.html">About</a>
+      <a href="pages/methodology.html">Methodology</a>
+      <a href="pages/privacy.html">Privacy</a>
+      <a href="pages/terms.html">Terms</a>
+      <a href="pages/contact.html">Contact</a>
+    </div>
+    <p class="footer-disclaimer">
+      Data Source: U.S. Environmental Protection Agency (EPA) RadNet.
+      This site provides informational visualization only.
+      Not an official emergency alert system.
+    </p>
+  </footer>
+
+</section>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="assets/js/status.js"></script>
+<script src="assets/js/radnet.js"></script>
+<script src="assets/js/map.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

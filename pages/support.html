@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="theme-color" content="#060a10"/>
+  <title>Support — NuclearThreatWatch.org</title>
+  <link rel="manifest" href="../manifest.json"/>
+  <link rel="stylesheet" href="../assets/css/style.css"/>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='none' stroke='%234ade80' stroke-width='8'/><circle cx='50' cy='50' r='10' fill='%234ade80'/></svg>"/>
+</head>
+<body>
+<nav id="topnav" role="navigation">
+  <a href="../index.html" class="logo-wrap">
+    <div class="logo-ring"></div>
+    <div><div class="logo-text">NUCLEAR<span>THREATWATCH</span></div><div class="logo-sub">Live Radiation Monitoring</div></div>
+  </a>
+  <div class="nav-links">
+    <a href="../index.html" class="nav-link">Live Map</a>
+    <a href="../resources.html" class="nav-link">Resources</a>
+    <a href="../check-your-area.html" class="nav-link">Check My Area</a>
+    <a href="../preparedness-gear.html" class="nav-link">Preparedness Gear</a>
+    <a href="../pages/about.html" class="nav-link">About</a>
+  </div>
+</nav>
+
+<!-- AD ZONE 1: 728x90 leaderboard above fold — activate after AdSense approval -->
+<div class="ad-zone ad-leaderboard" id="ad-top" style="display:none;">
+  <!-- PASTE ADSENSE 728x90 CODE HERE -->
+</div>
+<main class="content-page">
+  <h1>Support</h1>
+  <div class="page-sub">User manual and help documentation — Section 11.0</div>
+  <h2>How to Use the Dashboard</h2>
+<!-- AD ZONE 2: 336x280 rectangle mid-content — activate after AdSense approval -->
+<div class="ad-zone ad-rectangle" id="ad-mid" style="display:none;">
+  <!-- PASTE ADSENSE 336x280 CODE HERE -->
+</div>
+
+  <p>The main dashboard displays a map of the United States with colored dots representing EPA radiation monitoring stations. Tap or click any dot to see the current radiation reading, status, and plain-English explanation for that location.</p>
+
+  <h2>Status Level Meanings</h2>
+  <table>
+    <tr><th>Color</th><th>Status</th><th>Range</th><th>Meaning</th></tr>
+    <tr><td style="color:var(--green)">●</td><td>NORMAL</td><td>&lt;100 nSv/h</td><td>Within typical US background radiation range.</td></tr>
+    <tr><td style="color:var(--amber)">●</td><td>ELEVATED</td><td>100–149 nSv/h</td><td>Above average but not unusual for high-altitude areas.</td></tr>
+    <tr><td style="color:var(--red)">●</td><td>ALERT</td><td>≥150 nSv/h</td><td>Significantly above normal. Verify via epa.gov/radnet.</td></tr>
+    <tr><td style="color:var(--muted)">●</td><td>NO DATA</td><td>—</td><td>Station is offline or data is unavailable.</td></tr>
+  </table>
+  <div class="callout warn">These are display indicators only. They are not official emergency alerts.</div>
+
+  <h2>Data Timestamps and Refresh</h2>
+  <p>EPA updates station readings approximately every hour. This dashboard automatically refreshes data every 60 minutes. The timestamp shown in each station panel reflects when EPA last posted data for that location.</p>
+
+  <h2>Stale or Missing Data</h2>
+  <p>If a station shows "No Data" or "Estimated," the live EPA fetch for that location failed. This can happen due to station maintenance, communication outages, or temporary EPA server issues. Try refreshing the page after a few minutes. The dot will remain gray until live data is available.</p>
+
+  <h2>Browser Compatibility</h2>
+  <p>This app works in all modern browsers: Chrome, Firefox, Safari, Edge. Internet Explorer is not supported. For best mobile experience, use the latest version of Chrome (Android) or Safari (iPhone).</p>
+
+  <h2>Install as a Mobile App (Android)</h2>
+  <ol>
+    <li>Open the site in Chrome on your Android device.</li>
+    <li>Tap the three-dot menu in the top right corner.</li>
+    <li>Tap "Add to Home screen."</li>
+    <li>Tap "Add" to confirm.</li>
+    <li>The app will appear on your home screen and launch in fullscreen.</li>
+  </ol>
+
+  <h2>Install as a Mobile App (iPhone)</h2>
+  <ol>
+    <li>Open the site in Safari on your iPhone.</li>
+    <li>Tap the Share button (box with arrow) at the bottom of the screen.</li>
+    <li>Scroll down and tap "Add to Home Screen."</li>
+    <li>Tap "Add" in the top right.</li>
+    <li>The app appears on your home screen.</li>
+  </ol>
+
+  <h2>Desktop Access</h2>
+  <p>Open any modern browser and navigate to this site's URL. The map and panels are fully functional on desktop. Use the search bar to find specific cities.</p>
+
+  <h2>Troubleshooting</h2>
+  <h3>Map doesn't load</h3>
+  <p>Check your internet connection. The map tiles require an active connection on first load. If connected, try a hard refresh (Ctrl+Shift+R on Windows, Cmd+Shift+R on Mac).</p>
+  <h3>All stations show gray dots</h3>
+  <p>Data is still loading. Wait 15–30 seconds for the batch fetch to complete. The progress bar at the bottom shows loading status.</p>
+  <h3>App shows old data</h3>
+  <p>Hard refresh the page or clear browser cache. PWA cache can sometimes serve older versions of the app shell.</p>
+
+  <h2>Emergency Radiation Safety Resources</h2>
+  <ul>
+    <li><a href="https://www.ready.gov/nuclear-explosion" target="_blank" rel="noopener">FEMA Ready.gov — Nuclear Preparedness</a></li>
+    <li><a href="https://www.epa.gov/radnet" target="_blank" rel="noopener">EPA RadNet — Official Data</a></li>
+    <li><a href="https://www.nrc.gov/about-nrc/emerg-preparedness.html" target="_blank" rel="noopener">NRC — Emergency Preparedness</a></li>
+    <li><a href="https://www.cdc.gov/niosh/topics/emres/radiationemergency.html" target="_blank" rel="noopener">CDC — Radiation Emergencies</a></li>
+  </ul>
+  <div class="callout danger">In any radiation emergency, follow official government instructions. Do not rely on this site as your primary emergency information source.</div>
+
+  <h2>Site Disclaimers</h2>
+  <p>This platform provides informational visualization of publicly available EPA data only. It is not an official emergency alert system. It is not affiliated with the EPA, FEMA, NRC, or any government agency. All status indicators are approximate and for reference only. See <a href="terms.html">Terms and Conditions</a> for full disclaimers.</p>
+  </main>
+
+<!-- AD ZONE 3: 728x90 leaderboard footer — activate after AdSense approval -->
+<div class="ad-zone ad-leaderboard" id="ad-footer" style="display:none;">
+  <!-- PASTE ADSENSE 728x90 CODE HERE -->
+</div>
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="../index.html">Live Map</a>
+    <a href="../resources.html">Resources</a>
+    <a href="../check-your-area.html">Check My Area</a>
+    <a href="../preparedness-gear.html">Preparedness Gear</a>
+    <a href="../pages/about.html">About</a>
+    <a href="../pages/faq.html">FAQ</a>
+    <a href="../pages/contact.html">Contact</a>
+    <a href="../pages/privacy.html">Privacy</a>
+    <a href="../pages/terms.html">Terms</a>
+  </div>
+  <div class="footer-legal">
+    &copy; 2025 NuclearThreatWatch.org — Independent radiation monitoring using EPA RadNet data.<br>
+    Not affiliated with the EPA, FEMA, NRC, or any government agency. For informational purposes only.
+  </div>
+</footer>
+</body>
+</html>
