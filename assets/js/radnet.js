@@ -13,11 +13,11 @@ const RADNET_CONFIG = {
   CDX_BASE: "https://radnet.epa.gov/cdx-radnet-rest/api/rest/csv",
 
   // Set to your Cloudflare Worker URL after deploying _worker.js
-  // Example: "https://rad-proxy.yourname.workers.dev"
+  // Example: "rad-proxy.digimktgcoo.workers.dev"
   PROXY_BASE: "",
 
   // Set true after deploying Cloudflare Worker proxy
-  USE_PROXY: false,
+  USE_PROXY: true,
 
   // Fetch timeout in ms
   TIMEOUT_MS: 9000,
